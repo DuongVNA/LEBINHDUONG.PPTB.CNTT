@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giám sát vé &amp; đặt chỗ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">VIETNAM AIRLINES • GLOBAL TRACKING &amp; MONITORING</p>
+        <h1>Hệ thống giám sát toàn cầu đại lý Vietnam Airlines</h1>
+        <p class="subtitle">Control Center • Lê Bình Dương • SuperAdmin</p>
+      </div>
+      <div class="hero-actions">
+        <button class="btn btn-secondary">Gửi cảnh báo</button>
+        <button class="btn btn-primary">Giảm sát dữ liệu</button>
+      </div>
+    </header>
+
+    <main class="dashboard">
+      <section class="search-card glass" aria-labelledby="search-title">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Tra cứu chuyến bay / xuất vé</p>
+            <h2 id="search-title">Thông tin hành trình</h2>
+          </div>
+          <button class="btn btn-link">Tải lịch sử</button>
+        </div>
+
+        <form class="search-form">
+          <div class="field">
+            <label for="from">Từ</label>
+            <input id="from" type="text" value="SGN" />
+          </div>
+          <div class="field">
+            <label for="to">Đến</label>
+            <input id="to" type="text" value="HAN" />
+          </div>
+          <div class="field">
+            <label for="date">Ngày khởi hành</label>
+            <input id="date" type="date" value="2024-09-02" />
+          </div>
+          <div class="field">
+            <label for="class">Hạng vé</label>
+            <select id="class">
+              <option>Economy</option>
+              <option>Business</option>
+              <option>First</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="pax">Số khách</label>
+            <input id="pax" type="number" value="02" />
+          </div>
+          <div class="field">
+            <label for="channel">Kênh bán</label>
+            <select id="channel">
+              <option>GDS Sabre</option>
+              <option>NDC Vietnam Airlines</option>
+              <option>LCC Pacific</option>
+            </select>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-secondary" type="button">Lưu cấu hình</button>
+            <button class="btn btn-primary" type="submit">Tìm chuyển đổi</button>
+          </div>
+        </form>
+
+        <div class="tags">
+          <span class="tag active">GDS</span>
+          <span class="tag">NDC</span>
+          <span class="tag">LCC</span>
+          <span class="tag">Corporate</span>
+        </div>
+      </section>
+
+      <section class="metrics">
+        <article class="metric-card glass">
+          <p class="eyebrow">Doanh thu 24h</p>
+          <div class="metric-value">32.400 <span>vé</span></div>
+          <p class="metric-foot">+4.5% so với hôm qua</p>
+        </article>
+        <article class="metric-card glass">
+          <p class="eyebrow">Load factor</p>
+          <div class="metric-value">47.1 <span>%</span></div>
+          <p class="metric-foot">Đạt ngưỡng an toàn</p>
+        </article>
+        <article class="metric-card glass">
+          <p class="eyebrow">Tỉ lệ chậm trễ</p>
+          <div class="metric-value warning">1.95 <span>%</span></div>
+          <p class="metric-foot">+0.4% do thời tiết</p>
+        </article>
+        <article class="metric-card glass">
+          <p class="eyebrow">Vé bị nghi ngờ</p>
+          <div class="metric-value">96</div>
+          <p class="metric-foot">Đang xử lý với BSP</p>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <div class="tickets glass">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Đề xuất vé</p>
+              <h2>Danh sách chuyến bay khả dụng</h2>
+            </div>
+            <div class="filters">
+              <button class="btn btn-secondary">Giá tốt nhất</button>
+              <button class="btn btn-secondary">Điểm thưởng</button>
+              <button class="btn btn-secondary">An toàn cao</button>
+            </div>
+          </div>
+
+          <div class="ticket-list">
+            <article class="ticket-card">
+              <div>
+                <p class="ticket-route">SGN → HAN</p>
+                <p class="ticket-meta">VN208 • 06:00 - 08:05 • Airbus 321</p>
+              </div>
+              <div class="ticket-price">
+                <strong>3.790.000₫</strong>
+                <span>Economy Flex</span>
+              </div>
+              <button class="btn btn-primary">Giữ chỗ</button>
+            </article>
+
+            <article class="ticket-card">
+              <div>
+                <p class="ticket-route">SGN → DAD</p>
+                <p class="ticket-meta">VN122 • 10:25 - 11:40 • Airbus 321</p>
+              </div>
+              <div class="ticket-price">
+                <strong>2.640.000₫</strong>
+                <span>SkyBoss</span>
+              </div>
+              <button class="btn btn-secondary">Xem chi tiết</button>
+            </article>
+
+            <article class="ticket-card">
+              <div>
+                <p class="ticket-route">HAN → SIN</p>
+                <p class="ticket-meta">VN661 • 13:30 - 17:10 • Boeing 787</p>
+              </div>
+              <div class="ticket-price">
+                <strong>6.990.000₫</strong>
+                <span>Business Promo</span>
+              </div>
+              <button class="btn btn-primary">Phê duyệt</button>
+            </article>
+          </div>
+        </div>
+
+        <aside class="insights">
+          <article class="glass chart-card">
+            <div class="section-header">
+              <div>
+                <p class="eyebrow">SLA xử lý cố</p>
+                <h2>Hiệu suất tuần này</h2>
+              </div>
+              <button class="btn btn-link">Chi tiết</button>
+            </div>
+            <div class="chart">
+              <div class="chart-line"></div>
+              <ul class="chart-stats">
+                <li><span>PSP Search</span><strong>98.1%</strong></li>
+                <li><span>Queue SLA</span><strong>94.5%</strong></li>
+                <li><span>Auto-Issue</span><strong>86.2%</strong></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="glass feed-card">
+            <div class="section-header">
+              <div>
+                <p class="eyebrow">Nhật ký cảnh báo</p>
+                <h2>Thông báo mới</h2>
+              </div>
+              <button class="btn btn-link">Xem tất cả</button>
+            </div>
+            <ul class="activity">
+              <li>
+                <span class="dot"></span>
+                <div>
+                  <p class="activity-title">Nghi ngờ trùng PNR</p>
+                  <p class="activity-meta">Đại lý SkyLink • 2 phút trước</p>
+                </div>
+                <button class="btn btn-secondary">Xử lý</button>
+              </li>
+              <li>
+                <span class="dot warning"></span>
+                <div>
+                  <p class="activity-title">Thanh toán lỗi BSP</p>
+                  <p class="activity-meta">Batch 14:00 • 18 phút trước</p>
+                </div>
+                <button class="btn btn-secondary">Gửi báo cáo</button>
+              </li>
+              <li>
+                <span class="dot success"></span>
+                <div>
+                  <p class="activity-title">Tự động hoàn vé</p>
+                  <p class="activity-meta">Hành trình EU • 1 giờ trước</p>
+                </div>
+                <button class="btn btn-secondary">Xem</button>
+              </li>
+            </ul>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2024 Vietnam Airlines Control • Hotline 1900 1100 • support@vna.com</p>
+      <div class="footer-links">
+        <a href="#">Điều khoản</a>
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Trung tâm hỗ trợ</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
